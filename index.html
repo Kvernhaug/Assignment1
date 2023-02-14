@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Komputer Store - Cheap Computers Online</title>
+    <meta
+      name="description"
+      content="High-quality cheap computers online store. Special price for you!"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Link css file-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="myBody">
+    <header class="myHeader">
+        <h1>Komputer Store</h1>
+    </header>
+    <main>
+      <div class="flexbox-container">
+        <!--Left Sidebar-->
+        <div class="flexbox-side">
+          <!--Bank Window-->
+          <div class="flexbox-item">
+            <h2>Bank</h2>
+            <p style="text-align:left;">
+              Balance
+              <span id="balance" style="float:right;"></span>
+            </p>
+            <p style="text-align:left;" id="loanDisplay">
+              Outstanding loan
+              <span id="loan" style="float:right;"></span>
+            </p>
+            <button class="flexbox-button btn1" onclick="takeLoan()">Get a loan</button>
+          </div>
+          <!--Work window-->
+          <div class="flexbox-item">  
+            <h2>Work</h2>
+            <p style="text-align:left;">
+              Salary
+              <span id="salary" style="float:right;"></span>
+            </p>
+            <button id="btnRepayLoan" class="flexbox-button btn1" onclick="repayLoan()">Repay Loan</button>
+            <button class="flexbox-button btn1" onclick="bank()">Bank</button>
+            <button class="flexbox-button btn1" onclick="work()">Work</button>
+          </div>
+        </div>
+        <!--Main Window-->
+        <div class="flexbox-main">
+          <!--Laptop Box-->
+          <div class="flexbox-item main-item">
+            <!--Laptop image-->
+            <div class="flexbox-image">
+              <span id="image" class="image-style"></span>
+            </div>
+            <!--Laptop name and description-->
+            <div class="flexbox-descreet flexbox-discreet-2">
+              <h1><span id="title"></span></h1>
+              <p><span id="description"></span></p>
+            </div>
+            <!--Laptop price and buy button-->
+            <div class="flexbox-descreet">
+              <h2><span id="price"></span></h2>
+              <p id="insufficientFundsText">
+                Insufficient funds to buy laptop.
+              </p>
+              <button class="flexbox-button btn1" onclick="buyLaptop()">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+        <!--Right Sidebar-->
+        <div class="flexbox-side">
+          <div class="flexbox-item">
+            <h2>Laptops</h2>
+            <select name="selectLaptops" id="selectLaptops"></select>
+            <h3 style="margin-bottom: -10px;">Features:</h3>
+            <ul id="features"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Import scripts-->
+    <script src="scripts/Bank.js"></script>
+    <script src="scripts/Work.js"></script>
+    <script src="scripts/Laptops.js"></script>
+  </body>
+</html>
