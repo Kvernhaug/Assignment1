@@ -104,3 +104,11 @@
     max-width: 10px;
     max-height: 10px;
 }
+
+.select-laptops {
+    background-color: #252422;
+    color: #eb5e28;
+    padding: 0.5em;
+    font-weight: 600;
+    border: 2px solid #eb5e28;
+}

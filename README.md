@@ -2,4 +2,6 @@
 
 ## Create a Dynamic Webpage using JS
 
-Project by Andreas Kvernhaug. No special comments. Website is in dark mode because dark mode is king!
+Project by Andreas Kvernhaug. 
+
+Website is in dark mode with cool orange highlights because dark mode is king! 
