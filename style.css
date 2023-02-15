@@ -35,7 +35,7 @@
     background-color: #252422;
     padding: 1em 2em;
     margin: 1em;
-    border: 2px solid #ccc5b9;
+    box-shadow: 8px 8px 8px -4px #eb5e28;
     border-radius: 0.5em;
     min-height: 8em;
 }
